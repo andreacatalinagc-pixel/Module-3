@@ -46,10 +46,28 @@ for num in numbers:
     print("Number:", num)
 
 # TODO: Use a for loop with enumerate() to print both index and value
+fruits = ["apple", "banana", "cheffy"]
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+   
+for index, value in enumerate(numbers):
+    #print(index, value)
+    if index % 2 == 0:
+        print(f"{index}: {value}")
 
 # TODO: Create a dictionary and use a for loop to print all keys and values
-
+sara = {
+    "name": "Sarah",
+    "age": 23,
+    "city": "Paris",
+    "hobbies": ["reading", "swimming"],
+    }
+if sara["age"] >= 18:
+    print("est majeur")
+    print("est mineur")
 # TODO: Use a for loop with range() to print numbers from 1 to 10
+for key, value in sara.items():
+        print(f"sarah{key}] = {value}")
 
 # TODO: Use list comprehension to create a new list of squares of numbers
 
@@ -70,5 +88,7 @@ for x in fruits:
     print(x)
 
 
-for x in range(1,101):
+for x in range(1,11):
     print(x)
+  
+#IF
